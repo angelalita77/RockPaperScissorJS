@@ -1,7 +1,7 @@
 // Basic Rock Paper Scissors game
 // Player choose is consistantly "Rock"
-const playerInput = "RoCk";
-//let playerInput = prompt();
+//const playerInput = "RoCk";
+let playerInput = prompt();
 let playerSelection = fixedCaps(playerInput);
 console.log(playerSelection);
 
@@ -35,10 +35,14 @@ function playRound(playerSelection, computerSelection) {
     if (playerSelection == computerSelection) {
         return "Draw";
     }
-    else if (computerSelection == "Paper") {
+    else if ((computerSelection == "Paper" && playerSelection == "Rock") 
+             || (computerSelection == "Scissors" && playerSelection == "Paper") 
+             || (computerSelection == "Rock" && playerSelection == "Scissors")) {
         return "You Lose! " + computerSelection + " beats " + playerSelection;
     }
-    else if (computerSelection == "Scissors")
+    else if ((computerSelection == "Scissors" && playerSelection == "Rock") 
+             || (computerSelection == "Rock" && playerSelection == "Paper") 
+             || (computerSelection == "Paper" && playerSelection == "Scissors"))
     {
         return "You win! " + playerSelection + " beats " + computerSelection;
     }
