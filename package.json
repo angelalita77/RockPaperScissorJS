@@ -1,0 +1,16 @@
+{
+  "name": "rockpaperscissorjs",
+  "version": "1.0.0",
+  "description": "A simple Rock Paper Scissors game in Javascript This will have ittle to no GUI interface. Hopefully I will impliment a GUI interface in the future.",
+  "main": "rps_game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {}
+}
